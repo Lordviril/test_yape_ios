@@ -1,0 +1,13 @@
+//
+//  dev.xcconfig
+//  test_yape_ios
+//
+//  Created by iMac on 22/02/23.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+bundle_id = yape.com.dev.test-yape-ios
+app_name = Test Yape dev
+google_key = 748759526509-s267jd95nqmkf1q3pr9o8tq6gv3ihre1.apps.googleusercontent.com
+BASE_UREL = http:/$()/192.168.0.4:5001

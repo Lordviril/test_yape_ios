@@ -1,0 +1,1344 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6D3E80266157EA94F12D84A3 /* Pods_test_yape_iosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E9C0C6452EA82B48B6E2AF0 /* Pods_test_yape_iosTests.framework */; };
+		81DD2ECC99FBB75EF7095A70 /* Pods_test_yape_ios_test_yape_iosUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCB38B1CFBF2B35893EEB04D /* Pods_test_yape_ios_test_yape_iosUITests.framework */; };
+		880D52C929A6542F003B3081 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880D52C829A6542F003B3081 /* AppDelegate.swift */; };
+		880D52CB29A6542F003B3081 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880D52CA29A6542F003B3081 /* SceneDelegate.swift */; };
+		880D52CD29A6542F003B3081 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880D52CC29A6542F003B3081 /* ViewController.swift */; };
+		880D52D029A6542F003B3081 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 880D52CE29A6542F003B3081 /* Main.storyboard */; };
+		880D52D229A65431003B3081 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 880D52D129A65431003B3081 /* Assets.xcassets */; };
+		880D52D529A65431003B3081 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 880D52D329A65431003B3081 /* LaunchScreen.storyboard */; };
+		880D52E029A65432003B3081 /* test_yape_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880D52DF29A65432003B3081 /* test_yape_iosTests.swift */; };
+		880D52EA29A65432003B3081 /* test_yape_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880D52E929A65432003B3081 /* test_yape_iosUITests.swift */; };
+		880D52EC29A65432003B3081 /* test_yape_iosUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880D52EB29A65432003B3081 /* test_yape_iosUITestsLaunchTests.swift */; };
+		88C74ECB29A8094E00A1CC76 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 88C74ECA29A8094E00A1CC76 /* GoogleService-Info.plist */; };
+		88C74ED129A817FC00A1CC76 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C74ECE29A817FA00A1CC76 /* CustomView.swift */; };
+		88C74ED229A817FC00A1CC76 /* CustomShowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C74ECF29A817FB00A1CC76 /* CustomShowView.swift */; };
+		88C74ED329A817FC00A1CC76 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C74ED029A817FC00A1CC76 /* CustomButton.swift */; };
+		88C74EDB29A81BDF00A1CC76 /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C74EDA29A81BDF00A1CC76 /* UserRepository.swift */; };
+		88C74EDF29A81C5200A1CC76 /* ApiServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C74EDD29A81C5000A1CC76 /* ApiServices.swift */; };
+		88C74EE029A81C5200A1CC76 /* RouteURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C74EDE29A81C5200A1CC76 /* RouteURL.swift */; };
+		88C74EE329A81DA300A1CC76 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C74EE229A81DA300A1CC76 /* UserModel.swift */; };
+		88C74EE529A8269C00A1CC76 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C74EE429A8269C00A1CC76 /* AuthViewModel.swift */; };
+		88C74EE729A842EB00A1CC76 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C74EE629A842EB00A1CC76 /* CustomTextField.swift */; };
+		88C74EEA29A8459D00A1CC76 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C74EE929A8459D00A1CC76 /* String+Extension.swift */; };
+		88C74EEC29A849C100A1CC76 /* AuthViewModelProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C74EEB29A849C100A1CC76 /* AuthViewModelProtocols.swift */; };
+		88C74EF429A9184E00A1CC76 /* AlertsNative.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C74EF329A9184D00A1CC76 /* AlertsNative.swift */; };
+		ED8A62B300AB90A373DB7C33 /* Pods_test_yape_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57CFCE1CE7E2BFA34CAECB0B /* Pods_test_yape_ios.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		880D52DC29A65432003B3081 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 880D52BD29A6542F003B3081 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 880D52C429A6542F003B3081;
+			remoteInfo = test_yape_ios;
+		};
+		880D52E629A65432003B3081 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 880D52BD29A6542F003B3081 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 880D52C429A6542F003B3081;
+			remoteInfo = test_yape_ios;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0CD24D02278B213872A0FB7D /* Pods-test_yape_ios.debug(qa).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test_yape_ios.debug(qa).xcconfig"; path = "Target Support Files/Pods-test_yape_ios/Pods-test_yape_ios.debug(qa).xcconfig"; sourceTree = "<group>"; };
+		1C23844060F9CB8AF2592FD2 /* Pods-test_yape_ios.debug(dev).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test_yape_ios.debug(dev).xcconfig"; path = "Target Support Files/Pods-test_yape_ios/Pods-test_yape_ios.debug(dev).xcconfig"; sourceTree = "<group>"; };
+		2E9C0C6452EA82B48B6E2AF0 /* Pods_test_yape_iosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_test_yape_iosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3875BE906D4F2352FE737D8C /* Pods-test_yape_ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test_yape_ios.debug.xcconfig"; path = "Target Support Files/Pods-test_yape_ios/Pods-test_yape_ios.debug.xcconfig"; sourceTree = "<group>"; };
+		3BE2BE35B560E707D0F4B4AD /* Pods-test_yape_ios-test_yape_iosUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test_yape_ios-test_yape_iosUITests.release.xcconfig"; path = "Target Support Files/Pods-test_yape_ios-test_yape_iosUITests/Pods-test_yape_ios-test_yape_iosUITests.release.xcconfig"; sourceTree = "<group>"; };
+		3C4F76B9E3B54E7424AAFE26 /* Pods-test_yape_ios-test_yape_iosUITests.release(qa).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test_yape_ios-test_yape_iosUITests.release(qa).xcconfig"; path = "Target Support Files/Pods-test_yape_ios-test_yape_iosUITests/Pods-test_yape_ios-test_yape_iosUITests.release(qa).xcconfig"; sourceTree = "<group>"; };
+		45CBF430E58D9C5E5AF56067 /* Pods-test_yape_iosTests.debug(dev).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test_yape_iosTests.debug(dev).xcconfig"; path = "Target Support Files/Pods-test_yape_iosTests/Pods-test_yape_iosTests.debug(dev).xcconfig"; sourceTree = "<group>"; };
+		57CFCE1CE7E2BFA34CAECB0B /* Pods_test_yape_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_test_yape_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FB0B70FD3726CC1739AFB9F /* Pods-test_yape_ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test_yape_ios.release.xcconfig"; path = "Target Support Files/Pods-test_yape_ios/Pods-test_yape_ios.release.xcconfig"; sourceTree = "<group>"; };
+		7E72C915FC99A822221CAB73 /* Pods-test_yape_ios.release(qa).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test_yape_ios.release(qa).xcconfig"; path = "Target Support Files/Pods-test_yape_ios/Pods-test_yape_ios.release(qa).xcconfig"; sourceTree = "<group>"; };
+		7EBE547BBF2D8A055F00C25E /* Pods-test_yape_iosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test_yape_iosTests.release.xcconfig"; path = "Target Support Files/Pods-test_yape_iosTests/Pods-test_yape_iosTests.release.xcconfig"; sourceTree = "<group>"; };
+		880D52C529A6542F003B3081 /* test_yape_ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test_yape_ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		880D52C829A6542F003B3081 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		880D52CA29A6542F003B3081 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		880D52CC29A6542F003B3081 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		880D52CF29A6542F003B3081 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		880D52D129A65431003B3081 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		880D52D429A65431003B3081 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		880D52D629A65431003B3081 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		880D52DB29A65432003B3081 /* test_yape_iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = test_yape_iosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		880D52DF29A65432003B3081 /* test_yape_iosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test_yape_iosTests.swift; sourceTree = "<group>"; };
+		880D52E529A65432003B3081 /* test_yape_iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = test_yape_iosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		880D52E929A65432003B3081 /* test_yape_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test_yape_iosUITests.swift; sourceTree = "<group>"; };
+		880D52EB29A65432003B3081 /* test_yape_iosUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test_yape_iosUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		880D52F929A654FE003B3081 /* dev.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = dev.xcconfig; sourceTree = "<group>"; };
+		880D52FA29A65516003B3081 /* qa.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = qa.xcconfig; sourceTree = "<group>"; };
+		880D52FB29A65554003B3081 /* prd.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = prd.xcconfig; sourceTree = "<group>"; };
+		88C74ECA29A8094E00A1CC76 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		88C74ECE29A817FA00A1CC76 /* CustomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
+		88C74ECF29A817FB00A1CC76 /* CustomShowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomShowView.swift; sourceTree = "<group>"; };
+		88C74ED029A817FC00A1CC76 /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		88C74EDA29A81BDF00A1CC76 /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
+		88C74EDD29A81C5000A1CC76 /* ApiServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiServices.swift; sourceTree = "<group>"; };
+		88C74EDE29A81C5200A1CC76 /* RouteURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteURL.swift; sourceTree = "<group>"; };
+		88C74EE229A81DA300A1CC76 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		88C74EE429A8269C00A1CC76 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		88C74EE629A842EB00A1CC76 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		88C74EE929A8459D00A1CC76 /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		88C74EEB29A849C100A1CC76 /* AuthViewModelProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModelProtocols.swift; sourceTree = "<group>"; };
+		88C74EF329A9184D00A1CC76 /* AlertsNative.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertsNative.swift; sourceTree = "<group>"; };
+		8D5EDF02AB5EFFE186086B72 /* Pods-test_yape_ios-test_yape_iosUITests.debug(qa).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test_yape_ios-test_yape_iosUITests.debug(qa).xcconfig"; path = "Target Support Files/Pods-test_yape_ios-test_yape_iosUITests/Pods-test_yape_ios-test_yape_iosUITests.debug(qa).xcconfig"; sourceTree = "<group>"; };
+		C24FCD7D3933F24820946720 /* Pods-test_yape_iosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test_yape_iosTests.debug.xcconfig"; path = "Target Support Files/Pods-test_yape_iosTests/Pods-test_yape_iosTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DC0CE9E0E6719FC8913DBAAF /* Pods-test_yape_iosTests.debug(qa).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test_yape_iosTests.debug(qa).xcconfig"; path = "Target Support Files/Pods-test_yape_iosTests/Pods-test_yape_iosTests.debug(qa).xcconfig"; sourceTree = "<group>"; };
+		DCB38B1CFBF2B35893EEB04D /* Pods_test_yape_ios_test_yape_iosUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_test_yape_ios_test_yape_iosUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0EA5F3F852CB98F1B940566 /* Pods-test_yape_ios-test_yape_iosUITests.debug(dev).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test_yape_ios-test_yape_iosUITests.debug(dev).xcconfig"; path = "Target Support Files/Pods-test_yape_ios-test_yape_iosUITests/Pods-test_yape_ios-test_yape_iosUITests.debug(dev).xcconfig"; sourceTree = "<group>"; };
+		E13FAA65B88295EB5B53118F /* Pods-test_yape_iosTests.release(qa).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test_yape_iosTests.release(qa).xcconfig"; path = "Target Support Files/Pods-test_yape_iosTests/Pods-test_yape_iosTests.release(qa).xcconfig"; sourceTree = "<group>"; };
+		FF2E3A5A15CA0E3E8FE8E418 /* Pods-test_yape_ios-test_yape_iosUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test_yape_ios-test_yape_iosUITests.debug.xcconfig"; path = "Target Support Files/Pods-test_yape_ios-test_yape_iosUITests/Pods-test_yape_ios-test_yape_iosUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		880D52C229A6542F003B3081 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED8A62B300AB90A373DB7C33 /* Pods_test_yape_ios.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		880D52D829A65432003B3081 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D3E80266157EA94F12D84A3 /* Pods_test_yape_iosTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		880D52E229A65432003B3081 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81DD2ECC99FBB75EF7095A70 /* Pods_test_yape_ios_test_yape_iosUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5B53648168CCA61BBD946F3B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				57CFCE1CE7E2BFA34CAECB0B /* Pods_test_yape_ios.framework */,
+				DCB38B1CFBF2B35893EEB04D /* Pods_test_yape_ios_test_yape_iosUITests.framework */,
+				2E9C0C6452EA82B48B6E2AF0 /* Pods_test_yape_iosTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		880D52BC29A6542F003B3081 = {
+			isa = PBXGroup;
+			children = (
+				880D52C729A6542F003B3081 /* test_yape_ios */,
+				880D52DE29A65432003B3081 /* test_yape_iosTests */,
+				880D52E829A65432003B3081 /* test_yape_iosUITests */,
+				880D52C629A6542F003B3081 /* Products */,
+				9946294A8365F507C1D32BFE /* Pods */,
+				5B53648168CCA61BBD946F3B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		880D52C629A6542F003B3081 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				880D52C529A6542F003B3081 /* test_yape_ios.app */,
+				880D52DB29A65432003B3081 /* test_yape_iosTests.xctest */,
+				880D52E529A65432003B3081 /* test_yape_iosUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		880D52C729A6542F003B3081 /* test_yape_ios */ = {
+			isa = PBXGroup;
+			children = (
+				88C74EE129A81D8900A1CC76 /* Model */,
+				88C74ED929A81BBB00A1CC76 /* Respository */,
+				88C74ED429A81A7D00A1CC76 /* App */,
+				88C74ECC29A8122000A1CC76 /* Util */,
+				880D52F829A65451003B3081 /* Config */,
+				880D52C829A6542F003B3081 /* AppDelegate.swift */,
+				880D52CA29A6542F003B3081 /* SceneDelegate.swift */,
+				880D52D129A65431003B3081 /* Assets.xcassets */,
+				880D52D329A65431003B3081 /* LaunchScreen.storyboard */,
+				880D52D629A65431003B3081 /* Info.plist */,
+				88C74ECA29A8094E00A1CC76 /* GoogleService-Info.plist */,
+			);
+			path = test_yape_ios;
+			sourceTree = "<group>";
+		};
+		880D52DE29A65432003B3081 /* test_yape_iosTests */ = {
+			isa = PBXGroup;
+			children = (
+				880D52DF29A65432003B3081 /* test_yape_iosTests.swift */,
+			);
+			path = test_yape_iosTests;
+			sourceTree = "<group>";
+		};
+		880D52E829A65432003B3081 /* test_yape_iosUITests */ = {
+			isa = PBXGroup;
+			children = (
+				880D52E929A65432003B3081 /* test_yape_iosUITests.swift */,
+				880D52EB29A65432003B3081 /* test_yape_iosUITestsLaunchTests.swift */,
+			);
+			path = test_yape_iosUITests;
+			sourceTree = "<group>";
+		};
+		880D52F829A65451003B3081 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				880D52F929A654FE003B3081 /* dev.xcconfig */,
+				880D52FA29A65516003B3081 /* qa.xcconfig */,
+				880D52FB29A65554003B3081 /* prd.xcconfig */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		88C74ECC29A8122000A1CC76 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				88C74EED29A876E300A1CC76 /* Alert */,
+				88C74EE829A8458900A1CC76 /* Extentions */,
+				88C74EDC29A81C3C00A1CC76 /* Networking */,
+				88C74ECD29A8122700A1CC76 /* Components */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		88C74ECD29A8122700A1CC76 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				88C74ED029A817FC00A1CC76 /* CustomButton.swift */,
+				88C74ECF29A817FB00A1CC76 /* CustomShowView.swift */,
+				88C74ECE29A817FA00A1CC76 /* CustomView.swift */,
+				88C74EE629A842EB00A1CC76 /* CustomTextField.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		88C74ED429A81A7D00A1CC76 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				88C74ED529A81B7A00A1CC76 /* Auth */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		88C74ED529A81B7A00A1CC76 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				88C74ED829A81BAC00A1CC76 /* ViewModel */,
+				88C74ED629A81B8000A1CC76 /* View */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		88C74ED629A81B8000A1CC76 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				88C74ED729A81B8A00A1CC76 /* Controller */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		88C74ED729A81B8A00A1CC76 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				880D52CC29A6542F003B3081 /* ViewController.swift */,
+				880D52CE29A6542F003B3081 /* Main.storyboard */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		88C74ED829A81BAC00A1CC76 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				88C74EE429A8269C00A1CC76 /* AuthViewModel.swift */,
+				88C74EEB29A849C100A1CC76 /* AuthViewModelProtocols.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		88C74ED929A81BBB00A1CC76 /* Respository */ = {
+			isa = PBXGroup;
+			children = (
+				88C74EDA29A81BDF00A1CC76 /* UserRepository.swift */,
+			);
+			path = Respository;
+			sourceTree = "<group>";
+		};
+		88C74EDC29A81C3C00A1CC76 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				88C74EDD29A81C5000A1CC76 /* ApiServices.swift */,
+				88C74EDE29A81C5200A1CC76 /* RouteURL.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		88C74EE129A81D8900A1CC76 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				88C74EE229A81DA300A1CC76 /* UserModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		88C74EE829A8458900A1CC76 /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				88C74EE929A8459D00A1CC76 /* String+Extension.swift */,
+			);
+			path = Extentions;
+			sourceTree = "<group>";
+		};
+		88C74EED29A876E300A1CC76 /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				88C74EF329A9184D00A1CC76 /* AlertsNative.swift */,
+			);
+			path = Alert;
+			sourceTree = "<group>";
+		};
+		9946294A8365F507C1D32BFE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3875BE906D4F2352FE737D8C /* Pods-test_yape_ios.debug.xcconfig */,
+				0CD24D02278B213872A0FB7D /* Pods-test_yape_ios.debug(qa).xcconfig */,
+				1C23844060F9CB8AF2592FD2 /* Pods-test_yape_ios.debug(dev).xcconfig */,
+				5FB0B70FD3726CC1739AFB9F /* Pods-test_yape_ios.release.xcconfig */,
+				7E72C915FC99A822221CAB73 /* Pods-test_yape_ios.release(qa).xcconfig */,
+				FF2E3A5A15CA0E3E8FE8E418 /* Pods-test_yape_ios-test_yape_iosUITests.debug.xcconfig */,
+				8D5EDF02AB5EFFE186086B72 /* Pods-test_yape_ios-test_yape_iosUITests.debug(qa).xcconfig */,
+				E0EA5F3F852CB98F1B940566 /* Pods-test_yape_ios-test_yape_iosUITests.debug(dev).xcconfig */,
+				3BE2BE35B560E707D0F4B4AD /* Pods-test_yape_ios-test_yape_iosUITests.release.xcconfig */,
+				3C4F76B9E3B54E7424AAFE26 /* Pods-test_yape_ios-test_yape_iosUITests.release(qa).xcconfig */,
+				C24FCD7D3933F24820946720 /* Pods-test_yape_iosTests.debug.xcconfig */,
+				DC0CE9E0E6719FC8913DBAAF /* Pods-test_yape_iosTests.debug(qa).xcconfig */,
+				45CBF430E58D9C5E5AF56067 /* Pods-test_yape_iosTests.debug(dev).xcconfig */,
+				7EBE547BBF2D8A055F00C25E /* Pods-test_yape_iosTests.release.xcconfig */,
+				E13FAA65B88295EB5B53118F /* Pods-test_yape_iosTests.release(qa).xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		880D52C429A6542F003B3081 /* test_yape_ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 880D52EF29A65432003B3081 /* Build configuration list for PBXNativeTarget "test_yape_ios" */;
+			buildPhases = (
+				A99366B11A3DF9908B769C81 /* [CP] Check Pods Manifest.lock */,
+				880D52C129A6542F003B3081 /* Sources */,
+				880D52C229A6542F003B3081 /* Frameworks */,
+				880D52C329A6542F003B3081 /* Resources */,
+				2D19B1523AAB19D691E98693 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = test_yape_ios;
+			productName = test_yape_ios;
+			productReference = 880D52C529A6542F003B3081 /* test_yape_ios.app */;
+			productType = "com.apple.product-type.application";
+		};
+		880D52DA29A65432003B3081 /* test_yape_iosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 880D52F229A65432003B3081 /* Build configuration list for PBXNativeTarget "test_yape_iosTests" */;
+			buildPhases = (
+				C97F01907E3A3FE5061F7251 /* [CP] Check Pods Manifest.lock */,
+				880D52D729A65432003B3081 /* Sources */,
+				880D52D829A65432003B3081 /* Frameworks */,
+				880D52D929A65432003B3081 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				880D52DD29A65432003B3081 /* PBXTargetDependency */,
+			);
+			name = test_yape_iosTests;
+			productName = test_yape_iosTests;
+			productReference = 880D52DB29A65432003B3081 /* test_yape_iosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		880D52E429A65432003B3081 /* test_yape_iosUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 880D52F529A65432003B3081 /* Build configuration list for PBXNativeTarget "test_yape_iosUITests" */;
+			buildPhases = (
+				317FEAF7989C395681EFBCA9 /* [CP] Check Pods Manifest.lock */,
+				880D52E129A65432003B3081 /* Sources */,
+				880D52E229A65432003B3081 /* Frameworks */,
+				880D52E329A65432003B3081 /* Resources */,
+				A1D32C9E55CEA603CB0EF205 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				880D52E729A65432003B3081 /* PBXTargetDependency */,
+			);
+			name = test_yape_iosUITests;
+			productName = test_yape_iosUITests;
+			productReference = 880D52E529A65432003B3081 /* test_yape_iosUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		880D52BD29A6542F003B3081 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					880D52C429A6542F003B3081 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					880D52DA29A65432003B3081 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 880D52C429A6542F003B3081;
+					};
+					880D52E429A65432003B3081 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 880D52C429A6542F003B3081;
+					};
+				};
+			};
+			buildConfigurationList = 880D52C029A6542F003B3081 /* Build configuration list for PBXProject "test_yape_ios" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 880D52BC29A6542F003B3081;
+			productRefGroup = 880D52C629A6542F003B3081 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				880D52C429A6542F003B3081 /* test_yape_ios */,
+				880D52DA29A65432003B3081 /* test_yape_iosTests */,
+				880D52E429A65432003B3081 /* test_yape_iosUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		880D52C329A6542F003B3081 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				880D52D529A65431003B3081 /* LaunchScreen.storyboard in Resources */,
+				88C74ECB29A8094E00A1CC76 /* GoogleService-Info.plist in Resources */,
+				880D52D229A65431003B3081 /* Assets.xcassets in Resources */,
+				880D52D029A6542F003B3081 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		880D52D929A65432003B3081 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		880D52E329A65432003B3081 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2D19B1523AAB19D691E98693 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-test_yape_ios/Pods-test_yape_ios-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-test_yape_ios/Pods-test_yape_ios-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-test_yape_ios/Pods-test_yape_ios-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		317FEAF7989C395681EFBCA9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-test_yape_ios-test_yape_iosUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A1D32C9E55CEA603CB0EF205 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-test_yape_ios-test_yape_iosUITests/Pods-test_yape_ios-test_yape_iosUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-test_yape_ios-test_yape_iosUITests/Pods-test_yape_ios-test_yape_iosUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-test_yape_ios-test_yape_iosUITests/Pods-test_yape_ios-test_yape_iosUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A99366B11A3DF9908B769C81 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-test_yape_ios-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C97F01907E3A3FE5061F7251 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-test_yape_iosTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		880D52C129A6542F003B3081 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				880D52CD29A6542F003B3081 /* ViewController.swift in Sources */,
+				88C74ED129A817FC00A1CC76 /* CustomView.swift in Sources */,
+				88C74EDF29A81C5200A1CC76 /* ApiServices.swift in Sources */,
+				88C74ED329A817FC00A1CC76 /* CustomButton.swift in Sources */,
+				88C74EEC29A849C100A1CC76 /* AuthViewModelProtocols.swift in Sources */,
+				88C74EDB29A81BDF00A1CC76 /* UserRepository.swift in Sources */,
+				880D52C929A6542F003B3081 /* AppDelegate.swift in Sources */,
+				88C74EEA29A8459D00A1CC76 /* String+Extension.swift in Sources */,
+				880D52CB29A6542F003B3081 /* SceneDelegate.swift in Sources */,
+				88C74EE529A8269C00A1CC76 /* AuthViewModel.swift in Sources */,
+				88C74EF429A9184E00A1CC76 /* AlertsNative.swift in Sources */,
+				88C74EE729A842EB00A1CC76 /* CustomTextField.swift in Sources */,
+				88C74EE029A81C5200A1CC76 /* RouteURL.swift in Sources */,
+				88C74EE329A81DA300A1CC76 /* UserModel.swift in Sources */,
+				88C74ED229A817FC00A1CC76 /* CustomShowView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		880D52D729A65432003B3081 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				880D52E029A65432003B3081 /* test_yape_iosTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		880D52E129A65432003B3081 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				880D52EA29A65432003B3081 /* test_yape_iosUITests.swift in Sources */,
+				880D52EC29A65432003B3081 /* test_yape_iosUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		880D52DD29A65432003B3081 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 880D52C429A6542F003B3081 /* test_yape_ios */;
+			targetProxy = 880D52DC29A65432003B3081 /* PBXContainerItemProxy */;
+		};
+		880D52E729A65432003B3081 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 880D52C429A6542F003B3081 /* test_yape_ios */;
+			targetProxy = 880D52E629A65432003B3081 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		880D52CE29A6542F003B3081 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				880D52CF29A6542F003B3081 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		880D52D329A65431003B3081 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				880D52D429A65431003B3081 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		880D52ED29A65432003B3081 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 880D52FB29A65554003B3081 /* prd.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		880D52EE29A65432003B3081 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 880D52FB29A65554003B3081 /* prd.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		880D52F029A65432003B3081 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3875BE906D4F2352FE737D8C /* Pods-test_yape_ios.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N9AT24F8JU;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = test_yape_ios/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "${app_name}";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "yape.com.test-yape-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		880D52F129A65432003B3081 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5FB0B70FD3726CC1739AFB9F /* Pods-test_yape_ios.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N9AT24F8JU;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = test_yape_ios/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "${app_name}";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "yape.com.test-yape-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		880D52F329A65432003B3081 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C24FCD7D3933F24820946720 /* Pods-test_yape_iosTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N9AT24F8JU;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "yape.com.test-yape-iosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/test_yape_ios.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/test_yape_ios";
+			};
+			name = Debug;
+		};
+		880D52F429A65432003B3081 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7EBE547BBF2D8A055F00C25E /* Pods-test_yape_iosTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N9AT24F8JU;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "yape.com.test-yape-iosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/test_yape_ios.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/test_yape_ios";
+			};
+			name = Release;
+		};
+		880D52F629A65432003B3081 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF2E3A5A15CA0E3E8FE8E418 /* Pods-test_yape_ios-test_yape_iosUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N9AT24F8JU;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "yape.com.test-yape-iosUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = test_yape_ios;
+			};
+			name = Debug;
+		};
+		880D52F729A65432003B3081 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3BE2BE35B560E707D0F4B4AD /* Pods-test_yape_ios-test_yape_iosUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N9AT24F8JU;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "yape.com.test-yape-iosUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = test_yape_ios;
+			};
+			name = Release;
+		};
+		889896DC29A6BFDE00719BA3 /* Debug(dev) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 880D52F929A654FE003B3081 /* dev.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = "Debug(dev)";
+		};
+		889896DD29A6BFDE00719BA3 /* Debug(dev) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C23844060F9CB8AF2592FD2 /* Pods-test_yape_ios.debug(dev).xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N9AT24F8JU;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = test_yape_ios/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "${app_name}";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "yape.com.test-yape-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Debug(dev)";
+		};
+		889896DE29A6BFDE00719BA3 /* Debug(dev) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45CBF430E58D9C5E5AF56067 /* Pods-test_yape_iosTests.debug(dev).xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N9AT24F8JU;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "yape.com.test-yape-iosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/test_yape_ios.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/test_yape_ios";
+			};
+			name = "Debug(dev)";
+		};
+		889896DF29A6BFDE00719BA3 /* Debug(dev) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0EA5F3F852CB98F1B940566 /* Pods-test_yape_ios-test_yape_iosUITests.debug(dev).xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N9AT24F8JU;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "yape.com.test-yape-iosUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = test_yape_ios;
+			};
+			name = "Debug(dev)";
+		};
+		889896E029A6BFEF00719BA3 /* Debug(qa) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 880D52FA29A65516003B3081 /* qa.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = "Debug(qa)";
+		};
+		889896E129A6BFEF00719BA3 /* Debug(qa) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0CD24D02278B213872A0FB7D /* Pods-test_yape_ios.debug(qa).xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N9AT24F8JU;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = test_yape_ios/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "${app_name}";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "yape.com.test-yape-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Debug(qa)";
+		};
+		889896E229A6BFEF00719BA3 /* Debug(qa) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC0CE9E0E6719FC8913DBAAF /* Pods-test_yape_iosTests.debug(qa).xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N9AT24F8JU;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "yape.com.test-yape-iosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/test_yape_ios.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/test_yape_ios";
+			};
+			name = "Debug(qa)";
+		};
+		889896E329A6BFEF00719BA3 /* Debug(qa) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D5EDF02AB5EFFE186086B72 /* Pods-test_yape_ios-test_yape_iosUITests.debug(qa).xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N9AT24F8JU;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "yape.com.test-yape-iosUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = test_yape_ios;
+			};
+			name = "Debug(qa)";
+		};
+		889896E429A6BFF900719BA3 /* Release(qa) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 880D52FA29A65516003B3081 /* qa.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "Release(qa)";
+		};
+		889896E529A6BFF900719BA3 /* Release(qa) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E72C915FC99A822221CAB73 /* Pods-test_yape_ios.release(qa).xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N9AT24F8JU;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = test_yape_ios/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "${app_name}";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "yape.com.test-yape-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Release(qa)";
+		};
+		889896E629A6BFF900719BA3 /* Release(qa) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E13FAA65B88295EB5B53118F /* Pods-test_yape_iosTests.release(qa).xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N9AT24F8JU;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "yape.com.test-yape-iosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/test_yape_ios.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/test_yape_ios";
+			};
+			name = "Release(qa)";
+		};
+		889896E729A6BFF900719BA3 /* Release(qa) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C4F76B9E3B54E7424AAFE26 /* Pods-test_yape_ios-test_yape_iosUITests.release(qa).xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N9AT24F8JU;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "yape.com.test-yape-iosUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = test_yape_ios;
+			};
+			name = "Release(qa)";
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		880D52C029A6542F003B3081 /* Build configuration list for PBXProject "test_yape_ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				880D52ED29A65432003B3081 /* Debug */,
+				889896E029A6BFEF00719BA3 /* Debug(qa) */,
+				889896DC29A6BFDE00719BA3 /* Debug(dev) */,
+				880D52EE29A65432003B3081 /* Release */,
+				889896E429A6BFF900719BA3 /* Release(qa) */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		880D52EF29A65432003B3081 /* Build configuration list for PBXNativeTarget "test_yape_ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				880D52F029A65432003B3081 /* Debug */,
+				889896E129A6BFEF00719BA3 /* Debug(qa) */,
+				889896DD29A6BFDE00719BA3 /* Debug(dev) */,
+				880D52F129A65432003B3081 /* Release */,
+				889896E529A6BFF900719BA3 /* Release(qa) */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		880D52F229A65432003B3081 /* Build configuration list for PBXNativeTarget "test_yape_iosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				880D52F329A65432003B3081 /* Debug */,
+				889896E229A6BFEF00719BA3 /* Debug(qa) */,
+				889896DE29A6BFDE00719BA3 /* Debug(dev) */,
+				880D52F429A65432003B3081 /* Release */,
+				889896E629A6BFF900719BA3 /* Release(qa) */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		880D52F529A65432003B3081 /* Build configuration list for PBXNativeTarget "test_yape_iosUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				880D52F629A65432003B3081 /* Debug */,
+				889896E329A6BFEF00719BA3 /* Debug(qa) */,
+				889896DF29A6BFDE00719BA3 /* Debug(dev) */,
+				880D52F729A65432003B3081 /* Release */,
+				889896E729A6BFF900719BA3 /* Release(qa) */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 880D52BD29A6542F003B3081 /* Project object */;
+}
