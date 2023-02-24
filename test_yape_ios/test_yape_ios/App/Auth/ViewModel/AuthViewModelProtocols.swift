@@ -11,6 +11,7 @@ import UIKit
 protocol AuthViewModelViewToViewModel: AnyObject {
     func signInGoogle(controller: UIViewController)
     func signInEmail(userModel: UserModel)
+    func validateUser()
 }
 
 protocol AuthViewModelViewModelToView: AnyObject {

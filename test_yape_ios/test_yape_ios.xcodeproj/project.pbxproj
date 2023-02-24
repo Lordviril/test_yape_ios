@@ -31,6 +31,7 @@
 		88C74EEA29A8459D00A1CC76 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C74EE929A8459D00A1CC76 /* String+Extension.swift */; };
 		88C74EEC29A849C100A1CC76 /* AuthViewModelProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C74EEB29A849C100A1CC76 /* AuthViewModelProtocols.swift */; };
 		88C74EF429A9184E00A1CC76 /* AlertsNative.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C74EF329A9184D00A1CC76 /* AlertsNative.swift */; };
+		88C74EF729A9268F00A1CC76 /* UserDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C74EF629A9268F00A1CC76 /* UserDefault.swift */; };
 		ED8A62B300AB90A373DB7C33 /* Pods_test_yape_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57CFCE1CE7E2BFA34CAECB0B /* Pods_test_yape_ios.framework */; };
 /* End PBXBuildFile section */
 
@@ -92,6 +93,7 @@
 		88C74EE929A8459D00A1CC76 /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		88C74EEB29A849C100A1CC76 /* AuthViewModelProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModelProtocols.swift; sourceTree = "<group>"; };
 		88C74EF329A9184D00A1CC76 /* AlertsNative.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertsNative.swift; sourceTree = "<group>"; };
+		88C74EF629A9268F00A1CC76 /* UserDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefault.swift; sourceTree = "<group>"; };
 		8D5EDF02AB5EFFE186086B72 /* Pods-test_yape_ios-test_yape_iosUITests.debug(qa).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test_yape_ios-test_yape_iosUITests.debug(qa).xcconfig"; path = "Target Support Files/Pods-test_yape_ios-test_yape_iosUITests/Pods-test_yape_ios-test_yape_iosUITests.debug(qa).xcconfig"; sourceTree = "<group>"; };
 		C24FCD7D3933F24820946720 /* Pods-test_yape_iosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test_yape_iosTests.debug.xcconfig"; path = "Target Support Files/Pods-test_yape_iosTests/Pods-test_yape_iosTests.debug.xcconfig"; sourceTree = "<group>"; };
 		DC0CE9E0E6719FC8913DBAAF /* Pods-test_yape_iosTests.debug(qa).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test_yape_iosTests.debug(qa).xcconfig"; path = "Target Support Files/Pods-test_yape_iosTests/Pods-test_yape_iosTests.debug(qa).xcconfig"; sourceTree = "<group>"; };
@@ -274,6 +276,7 @@
 		88C74ED929A81BBB00A1CC76 /* Respository */ = {
 			isa = PBXGroup;
 			children = (
+				88C74EF529A9266500A1CC76 /* UserDefault */,
 				88C74EDA29A81BDF00A1CC76 /* UserRepository.swift */,
 			);
 			path = Respository;
@@ -310,6 +313,14 @@
 				88C74EF329A9184D00A1CC76 /* AlertsNative.swift */,
 			);
 			path = Alert;
+			sourceTree = "<group>";
+		};
+		88C74EF529A9266500A1CC76 /* UserDefault */ = {
+			isa = PBXGroup;
+			children = (
+				88C74EF629A9268F00A1CC76 /* UserDefault.swift */,
+			);
+			path = UserDefault;
 			sourceTree = "<group>";
 		};
 		9946294A8365F507C1D32BFE /* Pods */ = {
@@ -574,6 +585,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88C74EF729A9268F00A1CC76 /* UserDefault.swift in Sources */,
 				880D52CD29A6542F003B3081 /* ViewController.swift in Sources */,
 				88C74ED129A817FC00A1CC76 /* CustomView.swift in Sources */,
 				88C74EDF29A81C5200A1CC76 /* ApiServices.swift in Sources */,

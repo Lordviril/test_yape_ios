@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+import Toast_Swift
 class ViewController: UIViewController {
 
     @IBOutlet weak var googleButton: CustomButton!
@@ -24,15 +24,6 @@ class ViewController: UIViewController {
     func initComponent() {
         authViewModel = AuthViewModel(authViewModelViewModelToView: self)
     }
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-
-    }
 
     @IBAction func signInGoogle(button: UIButton) {
         
@@ -41,10 +32,13 @@ class ViewController: UIViewController {
     
     @IBAction func signInEmail(button: UIButton) {
         if (emailCustomTextField.textFieldInput.text ?? "").isEmpty || (passwordCustomTextField.textFieldInput.text ?? "").isEmpty {
-            AlertsNative.showSimpleAlertNoAction(contorller: self, titleText: "Error", subTitleText: "Por favor llene todos los campos")
+            self.view.makeToast("Please fill all fields")
             return
         }
-        authViewModel?.signInEmail(userModel: UserModel(email: emailCustomTextField.textFieldInput.text ?? "", token: "", password: passwordCustomTextField.textFieldInput.text ?? ""))
+        if !(emailCustomTextField.textFieldInput.text ?? "").isValidEmail() {
+            self.view.makeToast("Please enter valid email")
+        }
+        authViewModel?.signInEmail(userModel: UserModel(email: (emailCustomTextField.textFieldInput.text ?? "").lowercased(), token: "", password: passwordCustomTextField.textFieldInput.text ?? ""))
     }
 }
 //MARK: -AuthViewModelDelegate
@@ -54,7 +48,7 @@ extension ViewController: AuthViewModelViewModelToView {
     }
     
     func onShowError(error: String) {
-        
+        self.view.makeToast(error)
     }
 }
 

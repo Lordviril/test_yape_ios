@@ -34,6 +34,11 @@ class AuthViewModel: AuthViewModelViewToViewModel {
           }
     }
     
+    func validateUser() {
+        if let userData = UserDefault.getDefaultUser() {
+            authViewModelViewModelToView?.onCompleteGetUser(userData: userData)
+        }
+    }
     func signInEmail(userModel: UserModel) {
         getUser(userModel: userModel)
     }
@@ -45,6 +50,7 @@ class AuthViewModel: AuthViewModelViewToViewModel {
             if let userData1 = userData, let error = userData1.error {
                 self.authViewModelViewModelToView?.onShowError(error: error)
             } else if let userData1 = userData {
+                UserDefault.createDefaultUser(userData: userData1)
                 self.authViewModelViewModelToView?.onCompleteGetUser(userData: userData1)
             } else {
                 self.authViewModelViewModelToView?.onShowError(error: "Ha ocurrido un error")
