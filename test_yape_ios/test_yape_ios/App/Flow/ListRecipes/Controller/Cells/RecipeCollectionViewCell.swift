@@ -10,6 +10,7 @@ import SDWebImage
 import SkeletonView
 protocol RecipeCollectionViewCellDelegate: AnyObject {
     func onAddAndRemoveFavorite(result: Result)
+    func onShowLocation(datum: Datum)
 }
 class RecipeCollectionViewCell: UICollectionViewCell {
 
@@ -22,9 +23,11 @@ class RecipeCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var favoriteActiveImageView: UIImageView!
     @IBOutlet weak var favoriteInactiveImageView: UIImageView!
     @IBOutlet weak var favoriteButton: UIButton!
+    @IBOutlet weak var locationButton: UIButton!
     
     var delegate: RecipeCollectionViewCellDelegate?
     var result: Result?
+    var datum: Datum?
     var isFavorite: Bool = false {
         didSet{
             if isFavorite {
@@ -33,6 +36,15 @@ class RecipeCollectionViewCell: UICollectionViewCell {
             } else {
                 favoriteActiveImageView.isHidden = true
                 favoriteInactiveImageView.isHidden = false
+            }
+        }
+    }
+    var isLocationExist: Bool = false {
+        didSet{
+            if isLocationExist {
+                locationButton.isHidden = false
+            } else {
+                locationButton.isHidden = true
             }
         }
     }
@@ -51,6 +63,13 @@ class RecipeCollectionViewCell: UICollectionViewCell {
     @IBAction func favoriteOnPressed(button: UIButton) {
         if let result = self.result {
             delegate?.onAddAndRemoveFavorite(result: result)
+        }
+        
+    }
+    
+    @IBAction func locationOnPressed(button: UIButton) {
+        if let datum = datum {
+            delegate?.onShowLocation(datum: datum)
         }
         
     }
