@@ -526,7 +526,6 @@ func requestHttpwithUrl<T : Codable>(EpUrl: String, method: ApiServices.Method, 
 - configuramos nuestra consola de firebase
 - agregamos los correos a los que queremos liberar la version qa en develop segun ambiente
 
-![firebasestorage](https://firebasestorage.googleapis.com/v0/b/testyape-8efbd.appspot.com/o/Captura%20de%20Pantalla%202023-02-25%20a%20la(s)%2012.36.14%20a.m..png?alt=media&token=d986636e-3da0-4df4-a3c9-28c2dbe1706f)
 
 - y cada vez que hagamos un pull request a nuestra rama qa tendremos automáticamente un build con las características de workflow ya construidas
 
