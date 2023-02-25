@@ -39,6 +39,71 @@ response
 }
 ```
 
+- Para la parte del mapa se creo un endpoint donde empareja id de receta con latitud y longitud [/yape/api/addLocationRecipe](http://100.26.132.234:5001/yape/api/addLocationRecipe) 
+request
+```javascript
+{
+    "idRecipe": 715421,
+    "lat":3.4516467,
+    "lot":-76.5319854
+} //si digitas un correo diferente a gmail
+```
+response
+```javascript
+{
+    "data": [
+        {
+            "idRecipe": 716627,
+            "lat": 4.7109886,
+            "lot": -74.072092
+        },
+        {
+            "idRecipe": 646738,
+            "lat": 6.2476376,
+            "lot": -75.5658153
+        },
+        {
+            "idRecipe": 715421,
+            "lat": 3.4516467,
+            "lot": -76.5319854
+        }
+    ]
+}
+```
+- y por medio de un sencillo get podemos iterar entre las recetas y los datos de localizacion guardados [/yape/api/getLocationsRecipes](http://100.26.132.234:5001/yape/api/getLocationsRecipes) 
+
+response
+```javascript
+{
+    "data": [
+        {
+            "idRecipe": 716627,
+            "lat": 4.7109886,
+            "lot": -74.072092
+        },
+        {
+            "idRecipe": 646738,
+            "lat": 6.2476376,
+            "lot": -75.5658153
+        },
+        {
+            "idRecipe": 715421,
+            "lat": 3.4516467,
+            "lot": -76.5319854
+        }
+    ]
+}
+```
+
+Nota: cabe aclarar que mucha de la logica de negocio no se hizo en el back como deberia y recomiendo hacerse pero esto es con el fin de potenciar el reto en front incluso cosas como favoritos esta contruido de forma local
+- para la parte de las recetas se utiliza el api de [https://spoonacular.com/](https://spoonacular.com) 
+
+## Manejo de local storage
+- Contemplando la posibilidad de utilizar manejo de almacenamiento interno como userDefaults ketChain o incluso coreData se decidio irse por el lado de UserDEfault por si flesibilidad con #DB NOSQL
+- esto se puede apreciar en todo el flujo de agregar o quitar como favorito un item
+## Manejo de git (git flow)
+- en principio se p[enso en hacer una rama de despliegue para dev, qa, prd pero vieno la agilidad de prueba solo se dejo develop para dev y main para prd y qa
+
 ## Installation
 
 Use cocoa pods [cocoapods](https://cocoapods.org/) he instala los pods de dependencias .
@@ -328,3 +393,6 @@ extension ListRecipesViewModel: ListRecipesViewModelToView {
 ## Video demostrativo Detalle Recetas
 
 [![IMAGE ALT TEXT HERE](https://firebasestorage.googleapis.com/v0/b/pruebacyxtera-4bc18.appspot.com/o/Simulator%20Screen%20Shot%20-%20iPhone%2011%20Pro%20Max%20-%202023-02-10%20at%2016.12.14.png?alt=media&token=b6185015-0789-41ff-8a75-13e2c55ca49a)](https://youtube.com/shorts/MleNZDTURvY)
+## Video demostrativo Mapa Recetas
+
+[![IMAGE ALT TEXT HERE](https://firebasestorage.googleapis.com/v0/b/testyape-8efbd.appspot.com/o/Simulator%20Screen%20Shot%20-%20iPhone%2011%20Pro%20Max%20-%202023-02-25%20at%2000.28.58.png?alt=media&token=158b9960-e69d-4d8e-af38-8f3cf25f625c)](https://firebasestorage.googleapis.com/v0/b/testyape-8efbd.appspot.com/o/Simulator%20Screen%20Recording%20-%20iPhone%2011%20Pro%20Max%20-%202023-02-25%20at%2000.22.17.mp4?alt=media&token=4ade3949-0ec2-46ef-aba6-31ea71fdc7ad)
