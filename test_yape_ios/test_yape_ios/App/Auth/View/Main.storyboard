@@ -184,11 +184,22 @@
                         <outlet property="googleButton" destination="2C1-lq-nab" id="iZJ-sK-eD8"/>
                         <outlet property="passwordCustomTextField" destination="Sc9-HY-RUe" id="ZMQ-Vr-AHT"/>
                         <outlet property="signButton" destination="gVj-Lh-Kph" id="zEs-15-CMA"/>
+                        <segue destination="tl7-tB-Smq" kind="show" identifier="goToList" id="Xto-wI-a2s"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="71" y="5"/>
+        </scene>
+        <!--ListRecipes-->
+        <scene sceneID="iM8-07-zok">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ListRecipes" id="tl7-tB-Smq" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Yu7-x2-oyW"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8r9-wX-JEs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="825" y="-299"/>
         </scene>
     </scenes>
     <designables>
@@ -200,7 +211,7 @@
         </designable>
     </designables>
     <resources>
-        <image name="icon_google" width="1024" height="1024"/>
+        <image name="icon_google" width="341.33334350585938" height="341.33334350585938"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

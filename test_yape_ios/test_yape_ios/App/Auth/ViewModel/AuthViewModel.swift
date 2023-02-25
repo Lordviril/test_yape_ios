@@ -24,7 +24,7 @@ class AuthViewModel: AuthViewModelViewToViewModel {
         GIDSignIn.sharedInstance.signIn(with: signInConfig, presenting: controller) { [weak self] signInResult, error in
 
             guard let self = self else {return}
-            if error == nil {
+            if error != nil {
                 self.authViewModelViewModelToView?.onShowError(error: error.debugDescription)
                 return
             }

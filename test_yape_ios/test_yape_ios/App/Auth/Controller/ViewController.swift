@@ -15,6 +15,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var signButton: CustomButton!
 
     var authViewModel: AuthViewModel?
+    
+    var userData: UserData?
     override func viewDidLoad() {
         super.viewDidLoad()
         initComponent()
@@ -23,6 +25,7 @@ class ViewController: UIViewController {
 
     func initComponent() {
         authViewModel = AuthViewModel(authViewModelViewModelToView: self)
+        authViewModel?.validateUser()
     }
 
     @IBAction func signInGoogle(button: UIButton) {
@@ -40,11 +43,18 @@ class ViewController: UIViewController {
         }
         authViewModel?.signInEmail(userModel: UserModel(email: (emailCustomTextField.textFieldInput.text ?? "").lowercased(), token: "", password: passwordCustomTextField.textFieldInput.text ?? ""))
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let listRecipesViewController = segue.destination as? ListRecipesViewController {
+            listRecipesViewController.userData = userData
+        }
+    }
 }
 //MARK: -AuthViewModelDelegate
 extension ViewController: AuthViewModelViewModelToView {
     func onCompleteGetUser(userData: UserData) {
-        
+        self.userData = userData
+        performSegue(withIdentifier: "goToList", sender: nil)
     }
     
     func onShowError(error: String) {
