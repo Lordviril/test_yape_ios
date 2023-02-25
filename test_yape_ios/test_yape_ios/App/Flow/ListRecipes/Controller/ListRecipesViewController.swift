@@ -24,6 +24,7 @@ class ListRecipesViewController: UIViewController {
     var textSeacrh = ""
     var isLoading = true
     var userData: UserData?
+    var locationModel: LocationModel?
     override func viewDidLoad() {
         super.viewDidLoad()
         initComponent()
@@ -37,6 +38,7 @@ class ListRecipesViewController: UIViewController {
         recipesCollectionView.reloadData()
         viewModel?.getListRecipes(controller: self, text: "", offsetPage: 0, numberPerPage: 10)
         viewModel?.getTextFastSearch()
+        viewModel?.getLocationData()
         searchBarView.delegate = self
         dateSelectedView.delegate = self
         namePageDateSelectedView.delegate = self
@@ -72,6 +74,11 @@ class ListRecipesViewController: UIViewController {
 }
 //MARK: -ListRecipesViewToViewModel
 extension ListRecipesViewController: ListRecipesViewToViewModel {
+    func successGetListText(locationModel: LocationModel) {
+        self.locationModel = locationModel
+        recipesCollectionView.reloadData()
+    }
+    
     func successGetListText(textModel: TextModel) {
         dateSelectedView.textList = textModel.data ?? []
         let index = dateSelectedView.textList.firstIndex { text1 in
@@ -155,6 +162,10 @@ extension ListRecipesViewController: UICollectionViewDataSource {
                         return result1.id == listFavoritesRecipes[indexPath.row].id
                     }) != nil
                     cell.isFavorite = isFavorite
+                    cell.datum = locationModel?.data?.first(where: { datum in
+                        datum.idRecipe == listFavoritesRecipes[indexPath.row].id
+                    })
+                    cell.isLocationExist = cell.datum != nil
                 }
                 cell.delegate = self
                 
@@ -169,6 +180,10 @@ extension ListRecipesViewController: UICollectionViewDataSource {
                     return result1.id == result[indexPath.row].id
                 }) != nil
                 cell.isFavorite = isFavorite
+                cell.datum = locationModel?.data?.first(where: { datum in
+                    datum.idRecipe == result[indexPath.row].id
+                })
+                cell.isLocationExist = cell.datum != nil
             }
             cell.delegate = self
             return cell
@@ -229,6 +244,10 @@ extension ListRecipesViewController: DateSelectedViewDelegate {
 }
 //MARK: -RecipeCollectionViewCellDelegate
 extension ListRecipesViewController: RecipeCollectionViewCellDelegate {
+    func onShowLocation(datum: Datum) {
+        MapViewController.show(controller: self, datum: datum)
+    }
+    
     func onAddAndRemoveFavorite(result: Result) {
         viewModel?.addAndRemoveFavoriteId(result: result)
         listFavoritesRecipes = viewModel?.getListFavoriteREcipesIds() ?? []

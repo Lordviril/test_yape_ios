@@ -38,6 +38,13 @@ response
   ]
 }
 ```
+Nota: cabe aclarar que mucha de la logica de negocio no se hizo en el back como deberia y recomiendo hacerse pero esto es con el fin de potenciar el reto en front incluso cosas como favoritos esta contruido de forma local
+
+## Manejo de local storage
+- Contemplando la posibilidad de utilizar manejo de almacenamiento interno como userDefaults ketChain o incluso coreData se decidio irse por el lado de UserDEfault por si flesibilidad con #DB NOSQL
+- esto se puede apreciar en todo el flujo de agregar o quitar como favorito un item
+## Manejo de git (git flow)
+- en principio se p[enso en hacer una rama de despliegue para dev, qa, prd pero vieno la agilidad de prueba solo se dejo develop para dev y main para prd y qa
 
 - Para la parte del mapa se creo un endpoint donde empareja id de receta con latitud y longitud [/yape/api/addLocationRecipe](http://100.26.132.234:5001/yape/api/addLocationRecipe) 
 request
@@ -141,6 +148,8 @@ end
 - SDWebImage: descargar imagenes y menejo de cache para su reconsumo posteriormente.
 - SkeletonView: para la evidencia de fragmento de desgradado mientras trae los datos o responde en EndPoint seleccionado.
 
+- nota: al terminar de agregar los pods selecciona del los schemas el de test_yape_ios_qa o test_yape_ios_prd como en la imagen
+![firebasestorage](https://firebasestorage.googleapis.com/v0/b/testyape-8efbd.appspot.com/o/Captura%20de%20Pantalla%202023-02-24%20a%20la(s)%2010.45.33%20p.m..png?alt=media&token=586971c6-76a5-437b-aa5e-446d5f45a1ec)
 ## Arquitectura usada
 - mvvm: la idea es la implementación de [POP](https://medium.com/globallogic-latinoamerica-mobile/la-programaci%C3%B3n-orientada-a-protocolos-en-swift-3548ed2dc2f1) conjunto con un viewModel con los protocolos
 ```swift
@@ -354,6 +363,90 @@ extension ListRecipesViewModel: ListRecipesViewModelToView {
     }
 }
 
+```
+## Manejo de Generics
+- se tomo la decicion de junto con el JSONDECODE manejar Generics para la deserializacion de informacion
+
+```swift
+func requestHttpwithUrl<T : Codable>(EpUrl: String, method: ApiServices.Method, withData parameters: [String:Any], modelType:T.Type, completionHandler: @escaping (Bool, T?, Error?) -> Void) {
+        
+        let request_url = URL(string: EpUrl)
+        
+        let request:NSMutableURLRequest = NSMutableURLRequest()
+        print("[URL REQUEST=>]: \(request_url)")
+        print("[PARAMETERS=>]: \(parameters)")
+        request.url = request_url
+        request.httpMethod = method.rawValue
+        request.timeoutInterval = 30
+        request.allHTTPHeaderFields = ["Content-Type": "application/json"]
+        if method != .get {
+            let postData = try? JSONSerialization.data(withJSONObject: parameters, options: [])
+            request.httpBody = postData
+        }
+        let session = URLSession.init(configuration: .default)
+        let task = session.dataTask(with: request as URLRequest, completionHandler: { (data, response, error) -> Void in
+            let response = (response as? HTTPURLResponse)
+            print("[CODE STATUS=>]: \(response)")
+            if response?.statusCode == 200 || response?.statusCode == 201 {
+                if let safeData = data {
+                    let decoder = JSONDecoder()
+                    do {
+                        let textJson = String(decoding: safeData, as: UTF8.self)
+                        print("[RESPONSE=>]: \(textJson)")
+                        let decodedData = try decoder.decode(modelType, from: safeData)
+                        DispatchQueue.main.async {
+                            completionHandler(true, decodedData, nil)
+                        }
+                    } catch let error{
+                        print(error.localizedDescription)
+                        DispatchQueue.main.async {
+                            completionHandler(false, nil, error)
+                        }
+                    }
+                }else{
+                    print("[ERROR=>]: \(error?.localizedDescription ?? "")")
+                    DispatchQueue.main.async {
+                        completionHandler(false, nil, error)
+                    }
+                }
+            } else if response?.statusCode == 400 {
+                if let safeData = data {
+                    let decoder = JSONDecoder()
+                    do {
+                        let textJson = String(decoding: safeData, as: UTF8.self)
+                        print("[RESPONSE=>]: \(textJson)")
+                        let decodedData = try decoder.decode(modelType, from: safeData)
+                        DispatchQueue.main.async {
+                            completionHandler(true, decodedData, nil)
+                        }
+                    } catch let error {
+                        print(error.localizedDescription)
+                        DispatchQueue.main.async {
+                            completionHandler(false, nil, error)
+                        }
+                    }
+                }else{
+                    print("[ERROR=>]: \(error?.localizedDescription ?? "")")
+                    DispatchQueue.main.async {
+                        completionHandler(false, nil, error)
+                    }
+                }
+            } else {
+                print("[ERROR=>]: \(error?.localizedDescription ?? "")")
+                if let safeData = data{
+                    let textJson = String(decoding: safeData, as: UTF8.self)
+                    print("[RESPONSE=>]: \(textJson)")
+                    let decoder = JSONDecoder()
+                    DispatchQueue.main.async {
+                        completionHandler(false, nil, nil)
+                    }
+                }else{
+                    completionHandler(false, nil, nil)
+                }
+            }
+        })
+        task.resume()
+    }
 ```
 
 ## Depliegue continuo(CD)

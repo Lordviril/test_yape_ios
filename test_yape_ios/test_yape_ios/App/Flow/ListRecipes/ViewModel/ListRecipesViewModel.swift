@@ -26,6 +26,17 @@ extension ListRecipesViewModel: ListRecipesViewModelToView {
         }
     }
     
+    func getLocationData() {
+        
+        LocationsWS.getLocationRecipe() {[weak self] successs, locationData, error in
+            guard let self = self else {return}
+            if let locationData = locationData {
+                self.listRecipesViewToViewModel?.successGetListText(locationModel: locationData)
+            }
+        }
+
+    }
+    
     func addTextFastSearch(text: String) {
         SearchWS.createTextSearch(text: text, email: UserDefault.getDefaultUser()?.data?.email ?? "") { [weak self] success, textModel, error in
             guard let self = self else {return}
