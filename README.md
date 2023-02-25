@@ -43,6 +43,7 @@ Nota: cabe aclarar que mucha de la logica de negocio no se hizo en el back como 
 ## Manejo de local storage
 - Contemplando la posibilidad de utilizar manejo de almacenamiento interno como userDefaults ketChain o incluso coreData se decidio irse por el lado de UserDEfault por si flesibilidad con #DB NOSQL
 - esto se puede apreciar en todo el flujo de agregar o quitar como favorito un item
+
 ## Manejo de git (git flow)
 - en principio se p[enso en hacer una rama de despliegue para dev, qa, prd pero vieno la agilidad de prueba solo se dejo develop para dev y main para prd y qa
 
@@ -101,15 +102,68 @@ response
     ]
 }
 ```
-
+Nata: cabe acalara que solo las recetas que tengan asignado una localizacion se vera un boton para ir al mapa en la lista de Recetas
 Nota: cabe aclarar que mucha de la logica de negocio no se hizo en el back como deberia y recomiendo hacerse pero esto es con el fin de potenciar el reto en front incluso cosas como favoritos esta contruido de forma local
+
+- aca como ejemplo se deja el manejo de la iterancia de la existencia de id en local y en servicio de localizaicones guardadas y por medio de herramientas de ampliar el eprformace se itera entre las listas de favoritos y listas de localizaicones para saber donde esta le corazon prendido o apagado y cuales recetas tienen una localizacion asignada
+
+```swift
+func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        if isLoading {
+            if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: RecipeCollectionViewCell.identificador, for: indexPath) as? RecipeCollectionViewCell {
+                cell.showSkeletor()
+                return cell
+            }
+        }
+        if isFavoriteRecipes {
+            if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: RecipeCollectionViewCell.identificador, for: indexPath) as? RecipeCollectionViewCell {
+                cell.hidSkeletor()
+                if let listRecipes = listRecipes {
+                    cell.setData(baseUrl: listRecipes.baseURI ?? "", result: listFavoritesRecipes[indexPath.row])
+                    let isFavorite = viewModel?.getListFavoriteREcipesIds().first(where: { result1 in
+                        return result1.id == listFavoritesRecipes[indexPath.row].id
+                    }) != nil
+                    cell.isFavorite = isFavorite
+                    cell.datum = locationModel?.data?.first(where: { datum in
+                        datum.idRecipe == listFavoritesRecipes[indexPath.row].id
+                    })
+                    cell.isLocationExist = cell.datum != nil
+                }
+                cell.delegate = self
+                
+                return cell
+            }
+        }
+        if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: RecipeCollectionViewCell.identificador, for: indexPath) as? RecipeCollectionViewCell {
+            cell.hidSkeletor()
+            if let listRecipes = listRecipes, let result = listRecipes.results {
+                cell.setData(baseUrl: listRecipes.baseURI ?? "", result: result[indexPath.row])
+                let isFavorite = viewModel?.getListFavoriteREcipesIds().first(where: { result1 in
+                    return result1.id == result[indexPath.row].id
+                }) != nil
+                cell.isFavorite = isFavorite
+                cell.datum = locationModel?.data?.first(where: { datum in
+                    datum.idRecipe == result[indexPath.row].id
+                })
+                cell.isLocationExist = cell.datum != nil
+            }
+            cell.delegate = self
+            return cell
+        }
+        
+        return UICollectionViewCell()
+    }
+```
 - para la parte de las recetas se utiliza el api de [https://spoonacular.com/](https://spoonacular.com) 
 
 ## Manejo de local storage
 - Contemplando la posibilidad de utilizar manejo de almacenamiento interno como userDefaults ketChain o incluso coreData se decidio irse por el lado de UserDEfault por si flesibilidad con #DB NOSQL
 - esto se puede apreciar en todo el flujo de agregar o quitar como favorito un item
+
 ## Manejo de git (git flow)
-- en principio se p[enso en hacer una rama de despliegue para dev, qa, prd pero vieno la agilidad de prueba solo se dejo develop para dev y main para prd y qa
+- en principio se p[enso en hacer una rama de despliegue para dev, qa, prd pero vieno la agilidad de prueba solo se dejo develop para dev y main para prd y qa con el que se levanta ramas feature por cada avance 
+la parte de hotfix y integracion queda en la capa de revision pero al final si se hace la liberacion desde develop a prd(main)
+![firebasestorage](https://firebasestorage.googleapis.com/v0/b/testyape-8efbd.appspot.com/o/Captura%20de%20Pantalla%202023-02-25%20a%20la(s)%2012.39.47%20a.m..png?alt=media&token=0b056351-ce4b-4969-bd3b-a97f5faf62e6)
 
 ## Installation
 
@@ -150,6 +204,7 @@ end
 
 - nota: al terminar de agregar los pods selecciona del los schemas el de test_yape_ios_qa o test_yape_ios_prd como en la imagen
 ![firebasestorage](https://firebasestorage.googleapis.com/v0/b/testyape-8efbd.appspot.com/o/Captura%20de%20Pantalla%202023-02-24%20a%20la(s)%2010.45.33%20p.m..png?alt=media&token=586971c6-76a5-437b-aa5e-446d5f45a1ec)
+
 ## Arquitectura usada
 - mvvm: la idea es la implementación de [POP](https://medium.com/globallogic-latinoamerica-mobile/la-programaci%C3%B3n-orientada-a-protocolos-en-swift-3548ed2dc2f1) conjunto con un viewModel con los protocolos
 ```swift
@@ -471,7 +526,7 @@ func requestHttpwithUrl<T : Codable>(EpUrl: String, method: ApiServices.Method, 
 - configuramos nuestra consola de firebase
 - agregamos los correos a los que queremos liberar la version qa en develop segun ambiente
 
-![firebasestorage](https://firebasestorage.googleapis.com/v0/b/pruebacyxtera-4bc18.appspot.com/o/Captura%20de%20Pantalla%202023-02-10%20a%20la(s)%203.53.02%20p.m..png?alt=media&token=b5c1a480-e324-4c66-a6dc-20a50980d474)
+![firebasestorage](https://firebasestorage.googleapis.com/v0/b/testyape-8efbd.appspot.com/o/Captura%20de%20Pantalla%202023-02-25%20a%20la(s)%2012.36.14%20a.m..png?alt=media&token=d986636e-3da0-4df4-a3c9-28c2dbe1706f)
 
 - y cada vez que hagamos un pull request a nuestra rama qa tendremos automáticamente un build con las características de workflow ya construidas
 
