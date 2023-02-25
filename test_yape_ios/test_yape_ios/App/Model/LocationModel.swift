@@ -8,9 +8,12 @@
 import Foundation
 // MARK: - LocationModel
 struct LocationModel: Codable {
+    let data: Inter?
+}
+// MARK: - LocationModel
+struct Inter: Codable {
     let data: [Datum]?
 }
-
 // MARK: - Datum
 struct Datum: Codable {
     let idRecipe: Int?

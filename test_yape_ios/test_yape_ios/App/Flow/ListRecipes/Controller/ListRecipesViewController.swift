@@ -162,7 +162,7 @@ extension ListRecipesViewController: UICollectionViewDataSource {
                         return result1.id == listFavoritesRecipes[indexPath.row].id
                     }) != nil
                     cell.isFavorite = isFavorite
-                    cell.datum = locationModel?.data?.first(where: { datum in
+                    cell.datum = locationModel?.data?.data?.first(where: { datum in
                         datum.idRecipe == listFavoritesRecipes[indexPath.row].id
                     })
                     cell.isLocationExist = cell.datum != nil
@@ -180,7 +180,7 @@ extension ListRecipesViewController: UICollectionViewDataSource {
                     return result1.id == result[indexPath.row].id
                 }) != nil
                 cell.isFavorite = isFavorite
-                cell.datum = locationModel?.data?.first(where: { datum in
+                cell.datum = locationModel?.data?.data?.first(where: { datum in
                     datum.idRecipe == result[indexPath.row].id
                 })
                 cell.isLocationExist = cell.datum != nil
