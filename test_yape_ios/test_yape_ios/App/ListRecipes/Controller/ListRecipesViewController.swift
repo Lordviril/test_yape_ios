@@ -36,11 +36,10 @@ class ListRecipesViewController: UIViewController {
         isLoading = true
         recipesCollectionView.reloadData()
         viewModel?.getListRecipes(controller: self, text: "", offsetPage: 0, numberPerPage: 10)
-        
+        viewModel?.getTextFastSearch()
         searchBarView.delegate = self
         dateSelectedView.delegate = self
         namePageDateSelectedView.delegate = self
-        dateSelectedView.textList = viewModel?.getTextFastSearch() ?? []
         dateSelectedView.loadViews()
         recipesCollectionView.register(RecipeCollectionViewCell.nib(), forCellWithReuseIdentifier: RecipeCollectionViewCell.identificador)
         listFavoritesRecipes = viewModel?.getListFavoriteREcipesIds() ?? []
@@ -73,6 +72,16 @@ class ListRecipesViewController: UIViewController {
 }
 //MARK: -ListRecipesViewToViewModel
 extension ListRecipesViewController: ListRecipesViewToViewModel {
+    func successGetListText(textModel: TextModel) {
+        dateSelectedView.textList = textModel.data ?? []
+        let index = dateSelectedView.textList.firstIndex { text1 in
+            return text1 == self.textSeacrh
+        }
+        dateSelectedView.indexDefault = index ?? -1
+        dateSelectedView.loadViews()
+        self.recipesCollectionView.reloadData()
+    }
+    
     func succesGetListRecipes(listRecipes: ListRecipes, text: String) {
         self.listRecipes = listRecipes
         self.textSeacrh = text
@@ -84,15 +93,8 @@ extension ListRecipesViewController: ListRecipesViewToViewModel {
         }
         emptyState.isHidden = true
         namePageDateSelectedView.isHidden = false
-        if !(self.listRecipes?.results?.isEmpty ?? false) {
+        if !(self.listRecipes?.results?.isEmpty ?? false) && !self.textSeacrh.isEmpty {
             viewModel?.addTextFastSearch(text: text)
-            dateSelectedView.textList = viewModel?.getTextFastSearch() ?? []
-            let index = dateSelectedView.textList.firstIndex { text1 in
-                return text1 == text
-            }
-            dateSelectedView.indexDefault = index ?? -1
-            dateSelectedView.loadViews()
-            
         }
         guard let listRecipes = self.listRecipes else {return}
         namePageDateSelectedView.textList = viewModel?.getListPage(listRecipes: listRecipes) ?? []
@@ -108,10 +110,14 @@ extension ListRecipesViewController: ListRecipesViewToViewModel {
 //MARK: -SearchBarViewDelegate
 extension ListRecipesViewController: SearchBarViewDelegate {
     func onGetText(text: String) {
+        isLoading = true
+        self.recipesCollectionView.reloadData()
         viewModel?.getListRecipes(controller: self, text: text, offsetPage: 0, numberPerPage: 10)
     }
     
     func onClearText() {
+        isLoading = true
+        self.recipesCollectionView.reloadData()
         viewModel?.getListRecipes(controller: self, text: "", offsetPage: 0, numberPerPage: 10)
     }
 

@@ -39,6 +39,7 @@
 		8826F9B729A974CC00A06327 /* SearchDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8826F9B529A974CC00A06327 /* SearchDefault.swift */; };
 		8826F9B829A974CC00A06327 /* FavoriteDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8826F9B629A974CC00A06327 /* FavoriteDefault.swift */; };
 		8826F9BC29A99BB000A06327 /* SearchWS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8826F9BB29A99BB000A06327 /* SearchWS.swift */; };
+		8826F9BE29A9A16800A06327 /* TextModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8826F9BD29A9A16800A06327 /* TextModel.swift */; };
 		88C74ECB29A8094E00A1CC76 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 88C74ECA29A8094E00A1CC76 /* GoogleService-Info.plist */; };
 		88C74ED129A817FC00A1CC76 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C74ECE29A817FA00A1CC76 /* CustomView.swift */; };
 		88C74ED229A817FC00A1CC76 /* CustomShowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C74ECF29A817FB00A1CC76 /* CustomShowView.swift */; };
@@ -125,6 +126,7 @@
 		8826F9B529A974CC00A06327 /* SearchDefault.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchDefault.swift; sourceTree = "<group>"; };
 		8826F9B629A974CC00A06327 /* FavoriteDefault.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteDefault.swift; sourceTree = "<group>"; };
 		8826F9BB29A99BB000A06327 /* SearchWS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchWS.swift; sourceTree = "<group>"; };
+		8826F9BD29A9A16800A06327 /* TextModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextModel.swift; sourceTree = "<group>"; };
 		88C74ECA29A8094E00A1CC76 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		88C74ECE29A817FA00A1CC76 /* CustomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
 		88C74ECF29A817FB00A1CC76 /* CustomShowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomShowView.swift; sourceTree = "<group>"; };
@@ -450,6 +452,7 @@
 				8826F9B129A971A400A06327 /* DetailRecipes.swift */,
 				88C74EE229A81DA300A1CC76 /* UserModel.swift */,
 				8826F99C29A96DA900A06327 /* ListRecipes.swift */,
+				8826F9BD29A9A16800A06327 /* TextModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -788,6 +791,7 @@
 				8826F99A29A96D8D00A06327 /* SearchBarView.swift in Sources */,
 				88C74ED329A817FC00A1CC76 /* CustomButton.swift in Sources */,
 				88C74EEC29A849C100A1CC76 /* AuthViewModelProtocols.swift in Sources */,
+				8826F9BE29A9A16800A06327 /* TextModel.swift in Sources */,
 				88C74EDB29A81BDF00A1CC76 /* UserRepository.swift in Sources */,
 				8826F9B729A974CC00A06327 /* SearchDefault.swift in Sources */,
 				8826F99329A96D6400A06327 /* ButtonSelectView.swift in Sources */,

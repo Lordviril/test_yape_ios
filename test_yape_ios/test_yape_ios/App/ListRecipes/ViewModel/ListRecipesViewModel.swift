@@ -27,11 +27,29 @@ extension ListRecipesViewModel: ListRecipesViewModelToView {
     }
     
     func addTextFastSearch(text: String) {
-        addTextFastSearchUtil(text: text)
+        SearchWS.createTextSearch(text: text, email: UserDefault.getDefaultUser()?.data?.email ?? "") { [weak self] success, textModel, error in
+            guard let self = self else {return}
+            if let textModel1 = textModel, let error = textModel1.error {
+                self.listRecipesViewToViewModel?.showError(error: error)
+            } else if let textModel1 = textModel {
+                self.listRecipesViewToViewModel?.successGetListText(textModel: textModel1)
+            } else {
+                self.listRecipesViewToViewModel?.showError(error: "Ha ocurrido un error")
+            }
+        }
     }
     
-    func getTextFastSearch() -> [String] {
-        return getTextFastSearchUtil()
+    func getTextFastSearch(){
+        SearchWS.getTextSearch(email: UserDefault.getDefaultUser()?.data?.email ?? "") { [weak self] success, textModel, error in
+            guard let self = self else {return}
+            if let textModel1 = textModel, let error = textModel1.error {
+                self.listRecipesViewToViewModel?.showError(error: error)
+            } else if let textModel1 = textModel {
+                self.listRecipesViewToViewModel?.successGetListText(textModel: textModel1)
+            } else {
+                self.listRecipesViewToViewModel?.showError(error: "Ha ocurrido un error")
+            }
+        }
     }
     
     func getListFavoriteREcipesIds() -> [Result] {

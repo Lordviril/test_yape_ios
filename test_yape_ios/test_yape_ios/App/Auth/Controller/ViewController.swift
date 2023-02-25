@@ -25,9 +25,13 @@ class ViewController: UIViewController {
 
     func initComponent() {
         authViewModel = AuthViewModel(authViewModelViewModelToView: self)
-        authViewModel?.validateUser()
+        
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        authViewModel?.validateUser()
+    }
     @IBAction func signInGoogle(button: UIButton) {
         
         authViewModel?.signInGoogle(controller: self)

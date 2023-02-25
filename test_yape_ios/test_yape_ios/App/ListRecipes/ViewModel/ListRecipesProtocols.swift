@@ -10,6 +10,7 @@ import UIKit
 
 protocol ListRecipesViewToViewModel {
     func succesGetListRecipes(listRecipes: ListRecipes, text: String)
+    func successGetListText(textModel: TextModel)
     func showError(error: String)
 }
 

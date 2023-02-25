@@ -28,6 +28,17 @@ request
 {"idUder": "id",
 "text": "sandwich"} //si digitas un correo diferente a gmail
 ```
+response
+```javascript
+{
+  "data": [
+    "pasta",
+    "potate",
+    "potato"
+  ]
+}
+```
+
 ## Installation
 
 Use cocoa pods [cocoapods](https://cocoapods.org/) he instala los pods de dependencias .
