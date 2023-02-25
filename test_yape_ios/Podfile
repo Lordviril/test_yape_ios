@@ -6,14 +6,9 @@ target 'test_yape_ios' do
   use_frameworks!
   
   pod 'GoogleSignIn'
-  pod 'FirebaseUI'
-  pod 'FirebaseUI/Auth'
-  pod 'GoogleSignIn'
-  pod 'FirebaseUI/Google'
-  pod 'FirebaseUI/Facebook'
-  pod 'FirebaseUI/OAuth' # Used for Sign in with Apple, Twitter, etc
-  pod 'FirebaseUI/Phone'
-  # Pods for test_yape_ios
+  pod 'Toast-Swift', '~> 5.0.1'
+  pod 'SDWebImage', '~> 5.13.2'
+  pod 'SkeletonView', '~> 1.30.4'
 
   target 'test_yape_iosTests' do
     inherit! :search_paths
