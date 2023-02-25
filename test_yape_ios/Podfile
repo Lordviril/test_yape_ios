@@ -7,6 +7,8 @@ target 'test_yape_ios' do
   
   pod 'GoogleSignIn'
   pod 'Toast-Swift', '~> 5.0.1'
+  pod 'SDWebImage', '~> 5.13.2'
+  pod 'SkeletonView', '~> 1.30.4'
 
   target 'test_yape_iosTests' do
     inherit! :search_paths

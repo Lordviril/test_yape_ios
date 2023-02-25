@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="XUG-MZ-mDX">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
@@ -8,6 +8,22 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="kyJ-It-EfJ">
+            <objects>
+                <navigationController id="XUG-MZ-mDX" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Gul-9x-gFx">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="8RH-JV-xwv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3W8-3U-SON" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-717" y="5"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -17,7 +33,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P1J-00-qTW" customClass="CustomView" customModule="test_yape_ios" customModuleProvider="target">
-                                <rect key="frame" x="16" y="299.33333333333331" width="361" height="50"/>
+                                <rect key="frame" x="16" y="343.33333333333331" width="361" height="50"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusCustom">
@@ -26,7 +42,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dbg-Z0-E0K" customClass="CustomTextField" customModule="test_yape_ios" customModuleProvider="target">
-                                <rect key="frame" x="16" y="309.33333333333331" width="361" height="40"/>
+                                <rect key="frame" x="16" y="353.33333333333331" width="361" height="40"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="GfJ-4O-9Dl"/>
@@ -42,7 +58,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8ps-LN-aLE" customClass="CustomView" customModule="test_yape_ios" customModuleProvider="target">
-                                <rect key="frame" x="16" y="368.33333333333331" width="361" height="50"/>
+                                <rect key="frame" x="16" y="412.33333333333331" width="361" height="50"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusCustom">
@@ -51,7 +67,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sc9-HY-RUe" customClass="CustomTextField" customModule="test_yape_ios" customModuleProvider="target">
-                                <rect key="frame" x="16" y="378.33333333333331" width="361" height="40"/>
+                                <rect key="frame" x="16" y="422.33333333333331" width="361" height="40"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="dD1-xN-C5C"/>
@@ -68,13 +84,13 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign In" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zMm-df-xCe">
-                                <rect key="frame" x="168.66666666666666" y="260" width="55.666666666666657" height="20.333333333333314"/>
+                                <rect key="frame" x="168.66666666666666" y="304" width="55.666666666666657" height="20.333333333333314"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gVj-Lh-Kph" customClass="CustomButton" customModule="test_yape_ios" customModuleProvider="target">
-                                <rect key="frame" x="20" y="448.33333333333331" width="353" height="48"/>
+                                <rect key="frame" x="20" y="492.33333333333326" width="353" height="48"/>
                                 <color key="backgroundColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="sza-2L-NNT"/>
@@ -94,7 +110,7 @@
                                 </connections>
                             </button>
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3n5-uN-aIz" customClass="CustomView" customModule="test_yape_ios" customModuleProvider="target">
-                                <rect key="frame" x="20" y="520.33333333333337" width="353" height="48"/>
+                                <rect key="frame" x="20" y="564.33333333333337" width="353" height="48"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XZU-6C-x77">
                                         <rect key="frame" x="139.66666666666666" y="15" width="74" height="18"/>
@@ -128,7 +144,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2C1-lq-nab" customClass="CustomButton" customModule="test_yape_ios" customModuleProvider="target">
-                                <rect key="frame" x="20" y="520.33333333333337" width="353" height="48"/>
+                                <rect key="frame" x="20" y="564.33333333333337" width="353" height="48"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="0Ni-Ph-3Cy"/>
@@ -179,16 +195,28 @@
                             <constraint firstItem="Sc9-HY-RUe" firstAttribute="trailing" secondItem="Dbg-Z0-E0K" secondAttribute="trailing" id="uJy-vC-PKr"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="mIz-8r-mAU"/>
                     <connections>
                         <outlet property="emailCustomTextField" destination="Dbg-Z0-E0K" id="zll-rA-EoP"/>
                         <outlet property="googleButton" destination="2C1-lq-nab" id="iZJ-sK-eD8"/>
                         <outlet property="passwordCustomTextField" destination="Sc9-HY-RUe" id="ZMQ-Vr-AHT"/>
                         <outlet property="signButton" destination="gVj-Lh-Kph" id="zEs-15-CMA"/>
+                        <segue destination="tl7-tB-Smq" kind="show" identifier="goToList" id="Xto-wI-a2s"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="71" y="5"/>
+        </scene>
+        <!--ListRecipes-->
+        <scene sceneID="iM8-07-zok">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ListRecipes" id="tl7-tB-Smq" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Yu7-x2-oyW"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8r9-wX-JEs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="825" y="-299"/>
         </scene>
     </scenes>
     <designables>
@@ -200,7 +228,7 @@
         </designable>
     </designables>
     <resources>
-        <image name="icon_google" width="1024" height="1024"/>
+        <image name="icon_google" width="341.33334350585938" height="341.33334350585938"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
