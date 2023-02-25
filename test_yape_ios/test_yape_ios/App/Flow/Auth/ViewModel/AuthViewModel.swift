@@ -44,7 +44,7 @@ class AuthViewModel: AuthViewModelViewToViewModel {
     }
     
     func getUser(userModel: UserModel) {
-        UserRespository.signInUser(userModel: userModel) { [weak self] sueccess, userData, error in
+        UserRespository.signInUser(userModel: userModel) { [weak self] success, userData, error in
             guard let self = self else {return}
 
             if let userData1 = userData, let error = userData1.error {
